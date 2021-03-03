@@ -25,7 +25,7 @@ export async function fetchData(keyword) {
 
     async function process(arg) {
         const {topKeywords, risingKeywords} = await getTrends(keyword, arg);
-        topKeywords.push(...topList);
+        topList.push(...topKeywords);
         risingList.push(...risingKeywords)
     }
 
